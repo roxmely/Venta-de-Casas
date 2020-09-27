@@ -144,6 +144,27 @@ h4 {
 .navegacion a:hover {
   color: #71b100;
 }
+/**Mobile Menu**/
+.mobile-menu img {
+  width: 5rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.navegacion {
+  display: none;
+}
+.navegacion:target {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    display: block;
+  }
+}
 
 /**Iconos Nosotros**/
 @media (min-width: 768px) {
@@ -341,11 +362,15 @@ h4 {
 }
 /**Internas**/
 /**Nosotros**/
-.contenido-nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
+
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
 }
+
 .texto-nosotros blockquote {
   font-weight: 900;
   font-size: 2rem;
